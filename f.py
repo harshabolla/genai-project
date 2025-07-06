@@ -28,7 +28,7 @@ git add .
 git commit -m "Meaningful message"
 git push
 
-
+  ss
 
 second pc
 git clone <your-repo-URL>
