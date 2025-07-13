@@ -29,7 +29,7 @@ VECTORSTORE_PATH = "faiss_index"
 
 
 
-llm = ChatGoogleGenerativeAI(
+lm = ChatGoogleGeneiveAI(
     model="gemini-2.0-flash",
     temperature=0.7,
     max_tokens=None,
@@ -37,7 +37,7 @@ llm = ChatGoogleGenerativeAI(
     max_retries=2,
     # other params...
 )
-print("LLM initialized.",llm)
+print"LLM initialized.",llm)
 embeddings = GoogleGenerativeAIEmbeddings(
     model="models/embedding-001",
     google_api_key=os.getenv("GOOGLE_API_KEY")
